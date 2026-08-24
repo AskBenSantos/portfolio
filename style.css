@@ -21,7 +21,6 @@ nav{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 }
 
 nav a{
@@ -33,6 +32,11 @@ nav a{
   margin: 15px;
   background: rgb(75, 73, 73);
   border-radius: 12px;
+  min-width: 120px;
+  text-align: center;
+}
+nav a:first-child{
+  min-width: 220px;
 }
 
 nav a:hover{
@@ -48,7 +52,7 @@ nav a:hover{
 }
 .live-project-container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 25px;
   margin-bottom: 25px;
 }
@@ -89,16 +93,16 @@ nav a:hover{
   text-decoration: none;
   border: 1px solid gold;
   background:  rgb(75, 73, 73);
-  padding: 5px;
-  border-radius: 20px;
+  padding: 8px 12px;
+  border-radius: 12px;
   color: gold;
-  margin-top: 10px;
+  display: inline-block;
+  margin: 10px 0;
 }
 
 .card a:hover{
   background: black;
   box-shadow: 0px 4px 10px;
-  transition: ease-in-out;
 }
 
 /* skills styles */
@@ -118,12 +122,16 @@ ul{
 
 #contact p{
   text-align: center; 
+  margin: 30px;
+  font-weight: bold;
 }
 #contact a{
   text-decoration: none;
   background: rgb(75, 73, 73); 
-  padding: 5px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  color: gold;
+  font-weight: bold;
 }
 #contact a:hover{
   border: 1px solid gold;
@@ -131,12 +139,18 @@ ul{
   box-shadow: 0px 2px 4px;
 }
 
-@media (max-width: 700px){
+
+/* media query */
+@media (min-width:700px){
   .live-project-container{
-    display: grid;
-    grid-template-columns:1fr;
-  }
-  .card img{
-    height: 240px;
+    grid-template-columns: repeat(2, 1fr);
+
   }
 }
+  @media (min-width: 1000px){
+    .live-project-container{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+
