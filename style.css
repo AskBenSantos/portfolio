@@ -40,6 +40,9 @@ body.light-mode #theme-toggle:hover{
   border: 1px solid gold;
   box-shadow: 0px 4px 10px;
 }
+body.light-mode .card{
+  box-shadow: 0px 4px 10px rgb(37, 37, 37);
+}
 
 button{
   padding: 5px;
