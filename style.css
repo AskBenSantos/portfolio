@@ -74,8 +74,8 @@ nav a{
   color: gold;
   text-decoration: none;
   border: 1px solid white;
-  padding: 20px;
-  margin: 15px;
+  padding: 10px;
+  margin: 10px;
   background: rgb(75, 73, 73);
   border-radius: 12px;
   min-width: 120px;
@@ -181,9 +181,10 @@ ul{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   cursor: pointer;
   color: gold;
+
 
   
 }
@@ -191,7 +192,9 @@ ul{
 ul li{
   border: 1px solid #444;
   padding: 5px;
-  gap: 5px;
+  margin: 5px;
+  background:  rgb(75, 73, 73);
+  border-radius: 12px;
 }
 
 /* Contact styles */
