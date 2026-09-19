@@ -184,8 +184,14 @@ ul{
   justify-content: space-around;
   cursor: pointer;
   color: gold;
-  margin-bottom: 10px;
+
   
+}
+
+ul li{
+  border: 1px solid #444;
+  padding: 5px;
+  gap: 5px;
 }
 
 /* Contact styles */
